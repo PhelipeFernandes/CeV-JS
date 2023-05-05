@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificando Nacionalidade</h1>
+    <label for="txta">País</label>
+    <input type="text" name="txta" id="txta">
+    <button onclick="verificar()">Verificar</button>
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            let txta = document.querySelector("#txta")
+            let res = document.querySelector("#res")
+            if (txta.value === "Brasil") {
+                res.innerText = "Você é brasileiro"
+            }else{
+                res.innerText = "Você é estrangeiro"
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18 pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    </p>
+
+    <script>
+        let body = window.document.body
+        let p = document.getElementsByName('p')[1]//Tag name selecione os as tags HTML da página
+        /*
+        let div = window.document.getElementById('msg')
+        div.style.background = 'green'
+        div.innerText = 'Estou aguardando...'
+        */
+        let div = document.querySelector('div#msg')
+        div.style.background = 'blue'
+       //No querytSelector podemos selecionar elementos pelo ID, representado por '#', e podemos também seleciona classe, representado por '.'
+       
+
+    </script>
+</body>
+</html>
